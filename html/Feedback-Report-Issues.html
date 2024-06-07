@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Report Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback and Report</h1>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="feedback">Your Feedback:</label>
+                <textarea class="form-control" id="feedback" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+        <hr>
+        <h2>Report a Problem</h2>
+        <form id="reportForm">
+            <div class="form-group">
+                <label for="issue">Describe the issue:</label>
+                <textarea class="form-control" id="issue" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit Report</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    var feedback = document.getElementById('feedback').value;
+
+    // You can perform further validation here if needed
+
+    // Send the feedback to a server or perform any other action
+    // For demonstration purposes, let's just log the feedback to the console
+    console.log("Feedback submitted:", feedback);
+
+    // Optionally, you can show a success message to the user
+    alert("Thank you for your feedback!");
+    // You can also redirect the user to another page after submission
+    // window.location.href = "thankyou.html";
+});
+
+document.getElementById('reportForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    var issue = document.getElementById('issue').value;
+
+    // You can perform further validation here if needed
+
+    // Send the issue report to a server or perform any other action
+    // For demonstration purposes, let's just log the issue to the console
+    console.log("Issue reported:", issue);
+
+    // Optionally, you can show a success message to the user
+    alert("Issue reported successfully!");
+    // You can also redirect the user to another page after submission
+    // window.location.href = "thankyou.html";
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* .sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedan-regular-italic {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 1000
+.nunito-<uniquifier> {
+font-family: "Nunito", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;} */
+
+html, body{
+ height: 100%;
+ width: 100%; 
+ position: relative;
+ margin: 0px;
+ overflow-x: hidden;
+}
+
+header{
+ text-align: center;
+ background: #FFFFFF;
+ /* rgb(245, 222, 179)wheatish background */ > /* white */
+ color: #8B4513;
+ /* saddlebrown text color */  
+}
+
+nav{
+background-color: #ffffff;
+ height: 40px;
+ width: 100%;
+}
+
+.logo{
+ float: left;
+ height: inherit;
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.logo img {
+  height: 42px;
+  width: 100%;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item{
+ text-decoration: none;
+ height: inherit;
+ width: 50%;
+ padding: 0px 10px;
+ float: right;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ font-family: 'teko', sans-serif;
+ font-size: x-large;
+ font-weight: 600;
+}
+
+.nav-item-language{
+ text-decoration: none;
+ padding: 0px 10px;
+ align-items: center;
+ justify-content: center;
+ font-size: 100%;
+}
+
+.nav-item-language a{
+  color: #000;
+  text-decoration: none;
+  font-family: "oswald",'teko', serif;
+  font-size: 18px;
+}
+
+.nav-item-login{
+ padding: 0px 10px;
+ font-size: 100%;
+}
+.nav-item-login i{
+  color: #000;
+ }
+.hamburger-menu{
+padding: 0px 10px;
+cursor: pointer;
+z-index: 100;
+font-size: 100%;
+}
+
+.menu{
+margin: auto;
+padding: 25%;
+top: 40px;
+position: relative;
+} 
+
+.menu-items {
+margin: 0;
+padding: 0 20px;
+transition: 1s ease;
+display: none;
+align-items: center;
+justify-content: center;
+}
+
+.menu-items li {
+width: 100%;
+text-align: center;
+border-bottom: 1px solid #b38a22;
+align-items: center;
+list-style: none;
+padding: 10px;
+}
+
+.menu-items li a{
+color: #b38a22;
+text-decoration: none;
+font-family: "oswald", serif;
+}
+
+.menu-items li a:hover{
+color: rgb(30, 145, 1);
+}
+
+.open-menu{
+background-color: #FFFFFF;
+border: 2px solid  #000000;
+border-top: none;
+height: 60vh;
+margin: 0;
+position: absolute;
+top: 0;
+z-index: 25;
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.banner{
+ width: 100%;
+ padding-bottom: 50px;
+}
+
+/* .banner img{
+  width: 100%;
+ } */
+
+.search{
+  padding: 10px;
+}
+
+.search input{
+ border:2px solid black;
+ border-radius: 20px;
+ padding: 3px 17px;
+ width: 60%;
+ font-family: revert
+}
+header h1{
+ font-size: 40px;
+}
+
+section{
+ text-align: center;
+ height:100%;
+ padding: 75px 0px;
+ min-height: 40vh;
+}
+
+section h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: "oswald", serif;
+  font-size: 35px;
+}
+
+section h2 span{
+  color: #f15b20; 
+  padding-left: 8px;
+  font-family: "oswald", serif;
+  font-size: inherit;
+}
+
+h2{
+ padding-bottom: 40px;
+}
+
+section p{
+ margin: 0px 90px;
+ font-family: "oswald", serif;
+}
+
+footer {
+ overflow: hidden;
+ background-color: #333;
+ width: 100% ;
+}
+
+footer a{
+ display: block;
+ color: #FFFFFF;
+ text-decoration: none;
+ padding: 14px 20px;
+ float: left;
+ font-family: "oswald", serif;
+}
+
+.copyright{
+ float:right;
+}
+
+.flex-align-left {
+ margin-left: auto;
+}
+
+.menu-btn:hover{
+ background-color: #FFFFFF;
+ color: #000000;
+}
+
+/* flickity carousel */
+
+.carousel-cell {
+ width: 50%;
+ margin-right: 10px;
+ border-radius: 5px;
+}
+
+.carousel-cell img{
+ max-width: 100%;
+}
+
+.carousel-cell video{
+ max-width: 100%;
+}
+
+.iframe-container {
+ position: relative;
+ padding-top: 56.25%;
+ overflow: hidden;
+ width: 100%;
+}
+
+.iframe-container iframe {
+ position: absolute;
+ top = 0;
+ left =0;
+ border =0;
+ width =100%;
+ height =100%;
+}
+
+
+/* ABOUT US PAGE CSS STARTS HERE */
+.about-us-title{
+
+}
+
+.about-us-title-text {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: ;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "oswald", serif;
+}
+
+.about-section{
+  text-align: center;
+  height:100%;
+  min-height: 40vh;
+ }
+
+.about-section img{
+  width: 90%;
+} 
+
+.about-section p{
+  width: 90%;
+  font-family: "teko", serif;
+  font-size: 25px;
+}
+
+.about-section span{
+  color: #f15b20; 
+  font-family: "teko", serif;
+  font-size: 40px;
+  line-height: 40px
+} 
+
+ /* ABOUT US PAGE CSS ENDS HERE */
+
+ /*AGRICUTURAL COMMODITIES PRICES PAGE CSS STARTS HERE */
+ #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #ffffff;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #068720;
+  color: white;
+}
+
+/* AGRICUTURAL COMMODITIES PRICES PAGE CSS ENDS HERE */
+
+@media screen and (max-width:700px){
+ footer, nav {
+   flex-direction: column;
+   padding: 10px 0px;
+ }
+.flex-align-right{
+   margin-left: 0;
+   margin-right: 0;
+ }
+}

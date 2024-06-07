@@ -1,0 +1,39 @@
+#loginCard, #registrationForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}

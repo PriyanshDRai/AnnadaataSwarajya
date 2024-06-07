@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annadaata Swarajya | Home</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..125,100..800&family=Oswald:wght@200..700&family=Rozha+One&family=Sedan:ital@0;1&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo"> <a href="./home.html"><img src="../assets/logo/logo.png" alt="Annadaata Swarajya"></a>
+      </div>
+      <div class="nav-item">
+        <div class="nav-item-language" id="languageDiv">
+          <a href="./home.html" class="nav-language-eng pe-1">English </a> | <a href="./homehindi.html"
+                class="nav-language-hindi ps-1" style="font-family: 'Anek Devanagari', sans-serif;"> हिंदी</a>
+        </div>
+        <div class="nav-item-login">
+          <a href="./user login-registration.html"><i class="bi bi-person-fill"></i></a>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu" onclick="onClickMenu()"> <i class="bi bi-list"></i>
+        </div>
+      </div>
+      <div class="menu">
+        <ul class="menu-items" id="menu-items">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./AgriculturalCommoditiesPrices.html">Agricultural Commodities Prices</a></li>
+          <li><a href="./Food Security Act & Government Schemes.html">Food Security Act & Government Schemes</a></li>
+          <li><a href="./Weather Forecast, Agricultural News.html">Weather Forecast & Agricultural News</a></li>
+          <li><a href="./Feedback & Report Issues.html">Feedback & Report Issues</a></li>
+          <li><a href="./Terms Of Service & Privacy Policy.html">Terms Of Service & Privacy Policy</a></li>
+          <li><a href="./About Us.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="carousel slide carousel-fade" id="carouselbanner" data-bs-wrap="true" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000"><img src="../assets/image/Banner-2.png"
+              alt="Banner-2" class="d-block w-100"></div>
+          <div class="carousel-item active" data-bs-interval="2000"><img src="../assets/image/Banner-3.png"
+              alt="Banner-3" class="d-block w-100"></div>
+          <div class="carousel-item active" data-bs-interval="2000"><img src="../assets/image/Banner-4.png"
+              alt="Banner-4" class="d-block w-100"></div>
+          <div class="carousel-item active" data-bs-interval="2000"><img src="../assets/image/Banner-1.png"
+              alt="Banner-1" class="d-block w-100"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselbanner" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselbanner" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+    </div>
+    <div class="search">
+      <input type="text" name="search" id="search" placeholder="Search for Commodities...">
+      <i class="fa fa-search"></i>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Major<span>Commodities</span> </h2>
+      <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity="{ &quot;wrapAround&quot;: true }">
+        <div class="carousel-cell">
+          <img src="../assets/image/Wheat.png" alt="Wheat">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/rice.png" alt="Paddy(Rice)">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/millets.png" alt="Millets(Jowar,Bajra,Ragi)">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/maize.png" alt="Maize(Corn)">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/pulses.png" alt="Pulses">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/sugarcane.png" alt="Sugarcane">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/oil seeds.png" alt="Oilseeds">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/tea.png" alt="Tea">
+        </div>
+        <div class="carousel-cell">
+          <img src="../assets/image/coffee.png" alt="Coffee">
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2> Food Security Act <span>/ Government Schemes </span></h2>
+      <img src="../assets/image/Food_security.jpg" alt="Food Security Act" width="33%">
+      <p>The basic concept of food security globally is to ensure that all people, at all times, should get access to
+        the basic food for their active and healthy life and is characterized by availability, access, utilization and
+        stability of food. Though the Indian Constitution does not have any explicit provision regarding right to food,
+        the fundamental right to life enshrined in Article 21 of the Constitution may be interpreted to include right to
+        live with human dignity, which may include the right to food and other basic necessities.
+
+        Though the issue of 'food security' at the household is continuously being addressed by the Government since
+        long, through the Public Distribution System and the Targeted Public Distribution System, the enactment of the
+        National Food Security Act, (NFSA) 2013 on July 5, 2013 marks a paradigm shift in the approach to food security
+        from welfare to rights based approach. The Act legally entitles upto 75% of the rural population and 50% of the
+        urban population to receive subsidized foodgrains under Targeted Public Distribution System. About two thirds of
+        the population therefore is covered under the Act to receive highly subsidized foodgrains. As a step towards
+        women empowerment, the eldest woman of the household of age 18 years or above is mandated to be the head of the
+        household for the purpose of issuing of ration cards under the Act.
+
+        The Act is being implemented in all the States/UTs, and on an all India basis, out of maximum coverage of 81.34
+        crore persons, around 80 crore persons have been covered under NFSA at present for receiving highly subsidized
+        foodgrains. The identification of beneficiaries by States/UTs is a continuous process, which involves exclusion
+        of ineligible/fake/duplicate ration cards and also exclusion on account of death, migration etc. and inclusion
+        on account of birth as also that of genuine left-out households.
+
+        One of the guiding principles of the Act is its life-cycle approach wherein special provisions have been made
+        for pregnant women and lactating mothers and children in the age group of 6 months to 14 years, by entitling
+        them to receive nutritious meal free of cost through a widespread network of Integrated Child Development
+        Services (ICDS) centres, called Anganwadi Centres under ICDS scheme and also through schools under Mid-Day Meal
+        (MDM) scheme. Higher nutritional norms have been prescribed for malnourished children upto 6 years of age.
+        Pregnant women and lactating mothers are further entitled to receive cash maternity benefit of not less than Rs.
+        6,000 to partly compensate for the wage loss during the period of pregnancy and also to supplement nutrition.
+
+        In case of non-supply of the entitled quantities of foodgrains or meals to entitled persons under NFSA, such
+        persons shall be entitled to receive such food security allowance from the concerned State Government to be paid
+        to each person, within such time and manner as may be prescribed by the Central Government. These provisions are
+        governed through the Food Security Allowance Rules, 2015.
+
+
+
+        RESPONSIBILITIES UNDER NFSA
+        NFSA defines the joint responsibility of the Centre and State/UT Government. While the Centre is responsible for
+        allocation of required foodgrains to States/UTs, transportation of foodgrains up to designated depots in each
+        State/UT and providing central assistance to States/UTs for delivery of foodgrains from designated FCI godowns
+        to the doorstep of the FPSs, the States/UTs are responsible for effective implementation of the Act, which
+        inter-alia includes identification of eligible households, issuing ration cards to them, distribution of
+        foodgrain entitlements to eligible households through fair price shops (FPS), issuance of licenses to Fair Price
+        Shop dealers and their monitoring, setting up effective grievance redressal mechanism and necessary
+        strengthening of Targeted Public Distribution System (TPDS).
+
+
+
+        COVERAGE AND ENTITLEMENT UNDER NFSA
+        NFSA covers upto 75% of the rural population and 50% of the urban population under under Antyodaya Anna Yojana
+        (AAY) and priority households. While AAY households, which constitute poorest of the poor are entitled to 35 kg
+        of foodgrains per family per month, priority households are entitled to 5 kg per person per month. Corresponding
+        to the all India coverage of 75% and 50% in the rural and urban areas, State-wise coverage under NFSA was
+        determined by the erstwhile Planning Commission (now NITI Aayog) by using the NSS Household Consumption Survey
+        data for 2011-12. Within the coverage under TPDS determined for each State, the work of identification of
+        eligible households is to be done by States/UTs. It is the responsibility of the State Governments/UTs, to
+        evolve criteria for identification of priority households and their actual identification. Section 10 of the Act
+        provides that within the number of persons determined for coverage under TPDS, the State Government shall
+        identify the households under AAY as per guidelines applicable to the said scheme and the remaining households
+        as priority households to be covered under TPDS, in accordance with such guidelines as the State Government may
+        specify.
+
+        CENTRAL ISSUE PRICE UNDER NFSA
+        Foodgrains under NFSA were to be made available at subsidized prices of Rs. 3/2/1 per kg for rice, wheat and
+        coarse grains respectively for an initial period of three years from the date of commencement of the Act (July
+        13, 2013). Thereafter, prices were to be fixed by the Central Government from time to time, but not exceeding
+        MSP. Government has decided from time to time to continue the above mentioned subsidized prices under NFSA and
+        their validity has last been extended upto June, 2019.
+
+        TIDE OVER ALLOCATION
+        The Act provides that in case any State/UT’s allocation under NFSA is lower than their current allocation, it
+        will be protected upto the level of average offtake under erstwhile normal TPDS during 2010-11 to 2012-13, at
+        prices to be determined by the Central Government. Prices for APL households under erstwhile TPDS i.e. Rs. 6.10
+        per kg for wheat and Rs 8.30 per kg for rice has been determined as issue price for the additional allocation
+        under Tide Over.
+
+
+        DIRECT BENEFIT TRANSFER (DBT)
+        National Food Security Act (2013) provides for reforms in the TPDS including schemes such as Cash transfers for
+        provisioning of food entitlements. In pursuance of enabling provisions under section 12 of NFSA for cash
+        transfer, Govt. notified ‘Cash Transfer of Food Subsidy Rule, 2015’ in Aug 2015. The DBT experiment aims to (i)
+        reduce the need for huge physical movement of foodgrains (ii) provide greater autonomy to beneficiaries to
+        choose their consumption basket (iii) enhance dietary diversity (iv) reduce leakages (v) facilitate better
+        targeting (vi) promote financial inclusion
+
+        Direct Cash Transfer in food was started in UTs of Chandigarh and Puducherry from the month of September, 2015
+        and part of Dadra & Nagar Haveli from March, 2016. In these UTs, NFSA is being implemented in cash transfer mode
+        under which cash equivalent of subsidy is being transferred directly into the Bank accounts of eligible
+        households to enable them to purchase foodgrains from open market. The Scheme is optional for States/UTs and
+        operates in "Identified areas” in a State or Union territory or any specified area within the State or Union
+        territory for which there is a written consent of the State Government for implementation of the Scheme.
+        Prevailing system of distribution of food grains through Public Distribution System may continue in the
+        remaining areas not covered under the Scheme.
+
+
+        POWER OF CENTRAL GOVERNMENT TO MAKE RULES
+        Under Section 39(1) of NFSA, the Central Government may, in consultation with the State Governments and by
+        notification, make rules to carry out the provisions of the Act. The following Rules have been notified by the
+        Central Government:
+
+        i. Provisioning of Funds to State Governments for Short Supply of Foodgrains Rules, 2014.
+
+        ii. Food Security Allowance Rules, 2015.
+
+        iii. Food security (assistance to State Government Rules) 2015
+
+        iv. Cash Transfer of Food Subsidy Rules, 2015
+
+        v. Notification of WCD and HRD
+
+        Section 40 of the National Food Security Act provides that the State Governments may, by notification and
+        consistent with the Act and the rules made by the Central Government, make rules to carry out the provisions of
+        this Act.</p>
+    </section>
+    <section>
+      <h2>Agriculture News<span> / Recent Government Schemes </span></h2> <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity="{ &quot;wrapAround&quot;: true }">
+        <div class="carousel-cell iframe-container"> <iframe src="https://youtu.be/MHeG5RYnUOQ?si=ImrgVLIKzsRuGR-4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""></iframe>
+        </div>
+        <div class="carousel-cell iframe-container"> <iframe src="https://youtu.be/3whOE3lan0s?si=MT6t5TR8MMkkw3O8"
+            frameborder="0" allow="accelerometer;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <br>
+      <br> <a href="https://agricoop.gov.in/en/Major" target="_blank" rel="nooperner noreferrer">Major Government
+        Schemes</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://agricoop.gov.in/en/FarmWelfare" target="_blank"
+        rel="nooperner noreferrer">Farmer Welfare Schemes</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a
+        href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=27" target="_blank" rel="nooperner noreferrer">PIB
+        Agriculture</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://indianexpress.com/about/agriculture/" target="_blank"
+        rel="nooperner noreferrer">Agriculture News</a>
+    </section>
+    <section>
+      <h2> Weather <span> Forecast </span></h2>
+    </section>
+  </main>
+  <footer>
+    <a href="./About Us.html">Contact Us</a>
+    <a href="./Feedback & Report Issues.html">FAQ</a>
+    <a href="./Terms Of Service & Privacy Policy.html">Website Policies</a>
+    <a href="./Feedback & Report Issues.html">Report Issue &amp; Feedback</a>
+    <a class="copyright" href="./home.html">© 2024 | Annadata Swarajya</a>
+  </footer>
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="../script/script.js"></script>
+</body>
+</html>

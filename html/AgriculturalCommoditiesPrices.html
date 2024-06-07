@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annadaata Swarajya | Home</title>
+  <!-- <link rel="stylesheet" href="../style/style.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..125,100..800&family=Oswald:wght@200..700&family=Rozha+One&family=Sedan:ital@0;1&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+  <style>
+    body {
+      background-image: url(../assets/image/Login_bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .nav-item {
+      display: flex;
+      font-family: 'teko', sans-serif;
+      font-size: x-large;
+      font-weight: 600;
+
+      /* text-decoration: none;
+         height: inherit;
+         width: 50%;
+         padding: 0px 10px;
+         float: right; */
+      /* align-items: center;
+         justify-content: flex-end; */
+    }
+
+    .menu {
+      margin: auto;
+      /* padding: 25%; */
+      /* top: 40px; */
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu-items {
+      margin: 0;
+      padding: 0 20px;
+      transition: 1s ease;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-items li {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #b38a22;
+      align-items: center;
+      list-style: none;
+      padding: 10px;
+    }
+
+    .menu-items li a {
+      color: #b38a22;
+      text-decoration: none;
+      font-family: "oswald", serif;
+      font-size: x-large;
+      font-weight: 600;
+    }
+
+    .menu-items li a:hover {
+      color: rgb(30, 145, 1);
+    }
+
+    .open-menu {
+      background-color: #FFFFFF;
+      border: 2px solid #000000;
+      border-top: none;
+      height: 60vh;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      z-index: 25;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    main {
+      font-family: 'teko', sans-serif;
+      font-size: x-large;
+    }
+
+    .btn {
+      font-size: x-large;
+    }
+
+    .form-control {
+      font-size: x-large;
+    }
+
+    .table>:not(caption)>*>* {
+      padding: 5px !important;
+      line-height: 1.4;
+    }
+
+    tbody {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.722654027431285) 0%, rgba(42, 167, 223, 0.5013655120251226) 42%, rgba(42, 167, 223, 0.22) 100%);
+      border-color: #2aa7dfbf;
+    }
+
+    .modal-sheet {
+      background: rgb(241, 91, 32);
+      background: linear-gradient(90deg, rgba(241, 91, 32, 0.75) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(0, 105, 49, 0.7002450638458508) 100%);
+    }
+  </style>
+</head>
+
+<body class="agri-comm-prices-body">
+  <header>
+    <nav>
+      <div class="navbar bg-body-tertiary">
+        <div class="container-fluid"> <a class="navbar-brand m-0" href="./home.html" style="font-family: 'Anek Devanagari', sans-serif; 
+      font-size: xx-large; font-weight: 700; color: #f15b20;"><img src="../assets/logo/logo-Green.png"
+              alt="Annadaata Swarajya" width="100" height="100"><span style="color: #006931;">अन्नदाता</span>
+            स्वराज्य</a>
+
+          <div class="nav-item gap-3">
+            <div class="nav-item-language" id="languageDiv">
+              <a href="./home.html" class="nav-language-eng pe-1">English </a> | <a href="./homehindi.html"
+                class="nav-language-hindi ps-1" style="font-family: 'Anek Devanagari', sans-serif;"> हिंदी</a>
+            </div>
+            <div class="nav-item-login">
+              <a href="./user registration & info.html"><i class="bi bi-person-fill"></i></a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu" onclick="onClickMenu()"> <i class="bi bi-list"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <ul class="menu-items" id="menu-items">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./AgriculturalCommoditiesPrices.html">Agricultural Commodities Prices</a></li>
+          <li><a href="./Food Security Act & Government Schemes.html">Food Security Act & Government Schemes</a></li>
+          <li><a href="./Weather Forecast & Agricultural News.html">Weather Forecast & Agricultural News</a></li>
+          <li><a href="./Feedback & Report Issues.html">Feedback & Report Issues</a></li>
+          <li><a href="./Terms Of Service & Privacy Policy.html">Terms Of Service & Privacy Policy</a></li>
+          <li><a href="./About Us.html">About Us</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    </div>
+    <!-- <div class="search">
+      <input type="text" name="search" id="search" placeholder="Search for Commodities...">
+      <i class="fa fa-search"></i>
+    </div> -->
+    <div class="container my-5">
+      <div class="row d-flex justify-content-center">
+        <!-- Trade Details Form -->
+        <div class="col-md-6 card">
+          <div class="card-body">
+            <h2 class="card-title">Mandis Trade Details <span class="float-end" style="font-size: large">
+                <i class="bi bi-journal-text pt-3" style="font-size: x-large;"></i></span></h2>
+            <div class="col-sm-12 well e-trade-detail-box">
+              <input type="hidden" id="previous_date" value="2024-05-11">
+              <input type="hidden" id="current_date" value="2024-05-12">
+              <!-- <div class="col-md-2 emandi-select e-trade-inputs" style="padding-left:15px;">
+              <b>State</b>
+              <select class="form-select" id="min_max_state"><option value="">-- All --</option><option value="37">ANDAMAN AND NICOBAR ISLANDS</option><option value="276">ANDHRA PRADESH</option><option value="38">ASSAM</option><option value="33">BIHAR</option><option value="526">CHANDIGARH</option><option value="100">CHHATTISGARH</option><option value="34">GOA</option><option value="22">GUJARAT</option><option value="32">HARYANA</option><option value="43">HIMACHAL PRADESH</option><option value="696">JAMMU AND KASHMIR</option><option value="47">JHARKHAND</option><option value="695">KARNATAKA</option><option value="694">KERALA</option><option value="20">MADHYA PRADESH</option><option value="296">MAHARASHTRA</option><option value="35">NAGALAND</option><option value="384">ODISHA</option><option value="599">PUDUCHERRY</option><option value="602">PUNJAB</option><option value="26">RAJASTHAN</option><option value="509">TAMIL NADU</option><option value="28">TELANGANA</option><option value="36">TRIPURA</option><option value="46">UTTAR PRADESH</option><option value="385">UTTARAKHAND</option><option value="569">WEST BENGAL</option></select>
+              </div> -->
+              <div class="col-md-12 emandi-select e-trade-inputs">
+                <label for="min_max_apmc"><span><i class="bi bi-bank2"></i> APMC's</span></label>
+                <select class="form-select" style="font-size: x-large;" id="min_max_apmc">
+                  <option value="0">-- Select APMC --</option>
+                  <option value="406">AGAR</option>
+                  <option value="4063">ALIRAJPUR</option>
+                  <option value="3912">AMARPATAN</option>
+                  <option value="4165">ANUPPUR</option>
+                  <option value="4057">ARON</option>
+                  <option value="133">ASHOKNAGAR</option>
+                  <option value="334">ASHTA</option>
+                  <option value="3928">BADA MALHERA</option>
+                  <option value="4058">BADARWAS</option>
+                  <option value="400">BADNAGAR</option>
+                  <option value="396">BADNAWAR</option>
+                  <option value="3914">BAIKUNTHPUR</option>
+                  <option value="466">BALAGHAT</option>
+                  <option value="4085">BANKHEDI</option>
+                  <option value="387">BARELI</option>
+                  <option value="3915">BARWANI</option>
+                  <option value="4064">BEOHARI</option>
+                  <option value="386">BERASIA</option>
+                  <option value="134">BETUL</option>
+                  <option value="4065">BHIND</option>
+                  <option value="390">BIAORA</option>
+                  <option value="411">BINA</option>
+                  <option value="399">BURHANPUR</option>
+                  <option value="4164">CHAKGHAT</option>
+                  <option value="4091">CHAURAI</option>
+                  <option value="3916">CHHAPARA</option>
+                  <option value="465">CHHATARPUR</option>
+                  <option value="135">CHHINDWARA</option>
+                  <option value="407">DABRA</option>
+                  <option value="4079">DALAUDA</option>
+                  <option value="136">DAMOH</option>
+                  <option value="418">DATIA</option>
+                  <option value="4086">DEORI</option>
+                  <option value="137">DEWAS</option>
+                  <option value="395">DHAR</option>
+                  <option value="468">GADARWARA</option>
+                  <option value="389">GANJ BASODA</option>
+                  <option value="4087">GARHAKOTA</option>
+                  <option value="3929">GAUTAMPURA</option>
+                  <option value="4166">GOTEGAON</option>
+                  <option value="409">GUNA</option>
+                  <option value="4096">HANUMANA</option>
+                  <option value="138">HARDA</option>
+                  <option value="3930">HARPALPUR</option>
+                  <option value="3917">HARSUD</option>
+                  <option value="139">INDORE</option>
+                  <option value="393">ITARSI</option>
+                  <option value="140">JABALPUR</option>
+                  <option value="4075">JABERA</option>
+                  <option value="141">JAORA</option>
+                  <option value="4059">JHABUA</option>
+                  <option value="3920">JOBAT</option>
+                  <option value="3921">KARERA</option>
+                  <option value="21">KAROND</option>
+                  <option value="3922">KASRAWAD</option>
+                  <option value="3923">KATANGI</option>
+                  <option value="415">KATNI</option>
+                  <option value="398">KHANDWA</option>
+                  <option value="397">KHARGONE</option>
+                  <option value="403">KHATEGAON</option>
+                  <option value="4060">KHETIYA</option>
+                  <option value="392">KHIRKIYA</option>
+                  <option value="4097">KRISHI UPAJ MANDI SAMITI PATAN</option>
+                  <option value="854">KRISHI UPAJ MANDI SAMITI-ANJAD</option>
+                  <option value="849">KRISHI UPAJ MANDI SAMITI-BADWAHA</option>
+                  <option value="848">KRISHI UPAJ MANDI SAMITI-BANAPURA</option>
+                  <option value="852">KRISHI UPAJ MANDI SAMITI-BHIKANGAON</option>
+                  <option value="869">KRISHI UPAJ MANDI SAMITI-DHAMNOD</option>
+                  <option value="856">KRISHI UPAJ MANDI SAMITI-GANDHWANI</option>
+                  <option value="860">KRISHI UPAJ MANDI SAMITI-KARELI</option>
+                  <option value="853">KRISHI UPAJ MANDI SAMITI-KARHI</option>
+                  <option value="863">KRISHI UPAJ MANDI SAMITI-KHURAI</option>
+                  <option value="866">KRISHI UPAJ MANDI SAMITI-KOLARAS</option>
+                  <option value="857">KRISHI UPAJ MANDI SAMITI-KUKSHI</option>
+                  <option value="864">KRISHI UPAJ MANDI SAMITI-KUMBHRAJ</option>
+                  <option value="865">KRISHI UPAJ MANDI SAMITI-LASHKAR</option>
+                  <option value="867">KRISHI UPAJ MANDI SAMITI-NAGOD</option>
+                  <option value="845">KRISHI UPAJ MANDI SAMITI-NASRULLAGANJ</option>
+                  <option value="862">KRISHI UPAJ MANDI SAMITI-PANDHURNA</option>
+                  <option value="847">KRISHI UPAJ MANDI SAMITI-RAISEN</option>
+                  <option value="851">KRISHI UPAJ MANDI SAMITI-SANAWAD</option>
+                  <option value="861">KRISHI UPAJ MANDI SAMITI-SAUNSAR</option>
+                  <option value="855">KRISHI UPAJ MANDI SAMITI-SHIVPURI</option>
+                  <option value="868">KRISHI UPAJ MANDI SAMITI-SINGRAULI</option>
+                  <option value="846">KRISHI UPAJ MANDI SAMITI-UDAIPURA</option>
+                  <option value="3924">KURAWAR</option>
+                  <option value="4078">LAVKUSHNAGAR</option>
+                  <option value="402">MAHIDPUR</option>
+                  <option value="4088">MAIHAR</option>
+                  <option value="469">MANDLA</option>
+                  <option value="142">MANDSAUR</option>
+                  <option value="417">MHOW</option>
+                  <option value="463">MORENA</option>
+                  <option value="4098">MUNGAOLI</option>
+                  <option value="3925">NARSINGHGARH</option>
+                  <option value="143">NEEMUCH</option>
+                  <option value="4066">NIWARI</option>
+                  <option value="388">OBAIDULLAGANJ</option>
+                  <option value="4061">PACHORE</option>
+                  <option value="4156">PALARI</option>
+                  <option value="4083">PANNA</option>
+                  <option value="4074">PATHARIA</option>
+                  <option value="4067">PETLAWAD</option>
+                  <option value="4068">PIPALIYA</option>
+                  <option value="144">PIPARIYA</option>
+                  <option value="4072">RAHATGARH</option>
+                  <option value="3927">RAJGARH</option>
+                  <option value="4062">RAJNAGAR</option>
+                  <option value="145">RATLAM</option>
+                  <option value="4092">REHLI</option>
+                  <option value="146">REWA</option>
+                  <option value="147">SAGAR</option>
+                  <option value="394">SANWER</option>
+                  <option value="148">SATNA</option>
+                  <option value="4069">SEGAON</option>
+                  <option value="412">SEHORA</option>
+                  <option value="149">SEHORE</option>
+                  <option value="3911">SEMRI HARCHAND</option>
+                  <option value="462">SENDHWA</option>
+                  <option value="467">SEONI</option>
+                  <option value="4093">SHAHDOL</option>
+                  <option value="413">SHAHPURA BHITONI</option>
+                  <option value="420">SHAJAPUR</option>
+                  <option value="464">SHEOPURKALAN</option>
+                  <option value="404">SHUJALPUR</option>
+                  <option value="4094">SIDHI</option>
+                  <option value="4082">SILWANI</option>
+                  <option value="3910">SIRALI</option>
+                  <option value="4071">SIRONJ</option>
+                  <option value="4070">SONKATCH</option>
+                  <option value="4155">THANDLA</option>
+                  <option value="335">TIKAMGARH</option>
+                  <option value="391">TIMARNI</option>
+                  <option value="150">UJJAIN</option>
+                  <option value="4095">UMARIA</option>
+                  <option value="151">VIDISHA</option>
+                </select>
+              </div>
+              <div class="col-md-12 mt-2 emandi-select e-trade-inputs">
+                <label for="min_max_commodity"><span><i class="bi bi-minecart-loaded"></i></i> Commodity</span></label>
+                <select class="form-select" style="font-size: x-large;" id="min_max_commodity">
+                  <option value="0">-- Select Commodity --</option>
+                  <option value="ARHAR WHOLE / TUR (RED GRAM)">ARHAR WHOLE / TUR (RED GRAM)</option>
+                  <option value="BARLEY (JAU)">BARLEY (JAU)</option>
+                  <option value="CHANA (BENGAL GRAM)">CHANA (BENGAL GRAM)</option>
+                  <option value="CHANA (BENGAL GRAM)-DESI">CHANA (BENGAL GRAM)-DESI</option>
+                  <option value="CHANA BENGAL GRAM-DOLLAR">CHANA BENGAL GRAM-DOLLAR</option>
+                  <option value="DRY PEAS">DRY PEAS</option>
+                  <option value="GREEN GRAM">GREEN GRAM</option>
+                  <option value="GUAR SEEDS">GUAR SEEDS</option>
+                  <option value="MAIZE">MAIZE</option>
+                  <option value="MAIZE YELLOW">MAIZE YELLOW</option>
+                  <option value="MAIZE-NEW">MAIZE-NEW</option>
+                  <option value="MASOOR">MASOOR</option>
+                  <option value="MOONG WHOLE (GREEN GRAM)">MOONG WHOLE (GREEN GRAM)</option>
+                  <option value="MUSTARD">MUSTARD</option>
+                  <option value="PADDY">PADDY</option>
+                  <option value="PADDY-COMMON GRADE">PADDY-COMMON GRADE</option>
+                  <option value="PEAS GREEN ">PEAS GREEN </option>
+                  <option value="PEAS SHELLING">PEAS SHELLING</option>
+                  <option value="RAJMA">RAJMA</option>
+                  <option value="SOYA-YELLOW">SOYA-YELLOW</option>
+                  <option value="SOYABEANS">SOYABEANS</option>
+                  <option value="TARAMIRA">TARAMIRA</option>
+                  <option value="TEVADA ">TEVADA </option>
+                  <option value="TUR/ARHAR">TUR/ARHAR</option>
+                  <option value="URAD (BLACK GRAM)">URAD (BLACK GRAM)</option>
+                  <option value="WHEAT">WHEAT</option>
+                  <option value="WHEAT-HYBRID">WHEAT-HYBRID</option>
+                  <option value="WHEAT-SARABHATI">WHEAT-SARABHATI</option>
+                  <option value="WHITE PEAS">WHITE PEAS</option>
+                </select>
+              </div>
+              <div class="col-md-12 mt-2 emandi-select e-trade-inputs1">
+                <label for="min_max_apmc_from_date"><span><i class="bi bi-calendar-week"></i> From Date</span></label>
+                <input class="form-control" type="date" id="min_max_apmc_from_date">
+              </div>
+              <div class="col-md-12 mt-2 emandi-select e-trade-inputs1">
+                <label for="min_max_apmc_to_date"><span><i class="bi bi-calendar-week"></i> To Date</span></label>
+                <input class="form-control" type="date" id="min_max_apmc_to_date">
+              </div>
+              <div class="col-md-2 mt-3 emandi-select e-trade-refresh-b">
+                <input class="btn btn-success" type="button" value="Refresh" id="refresh" onclick="refresh()">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="agri-comm-prices-section m-5" style="padding: 0;">
+      <div class="gap-2 d-md-flex justify-content-md-end my-2">
+        <button class="btn btn-success me-md-2" style="--bs-btn-padding-x: 0.3rem; --bs-btn-padding-y: 0.05rem;"
+          type="button" onclick="add()"><i class="bi bi-patch-plus"></i> Add</button>
+        <button class="btn btn-warning me-md-2" style="--bs-btn-padding-x: 0.3rem; --bs-btn-padding-y: 0.05rem;"
+          type="button" onclick="edit()"><i class="bi bi-pen"></i> Edit</button>
+        <button class="btn btn-danger" style="--bs-btn-padding-x: 0.3rem; --bs-btn-padding-y: 0.05rem;" type="button"
+          onclick="remove()"><i class="bi bi-trash3-fill"></i> Delete</button>
+      </div>
+      <!-- Add Inputs form for Mandi Trade Data by clicking ADD Button -->
+      <div class="div" id="addDataForm" style="display: none;">
+        <div class="modal modal-sheet position-fixed d-block" tabindex="-1" role="dialog" id="modalTour">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-body">
+                <h3 class="mb-0">Add Trade Data</h3>
+
+                <div class="col-md-12 emandi-select e-trade-inputs">
+                  <label for="addData_apmc" style="float: left;"><span><i class="bi bi-bank2"></i> APMC's</span></label>
+                  <select class="form-select" style="font-size: x-large;" id="addData_apmc">
+                    <option value="0">-- Select APMC --</option>
+                    <option value="AGAR">AGAR</option>
+                    <option value="ALIRAJPUR">ALIRAJPUR</option>
+                    <option value="AMARPATAN">AMARPATAN</option>
+                    <option value="ANUPPUR">ANUPPUR</option>
+                    <option value="ARON">ARON</option>
+                    <option value="ASHOKNAGAR">ASHOKNAGAR</option>
+                    <option value="ASHTA">ASHTA</option>
+                    <option value="BADA MALHERA">BADA MALHERA</option>
+                    <option value="BADARWAS">BADARWAS</option>
+                    <option value="BADNAGAR">BADNAGAR</option>
+                    <option value="BADNAWAR">BADNAWAR</option>
+                    <option value="BAIKUNTHPUR">BAIKUNTHPUR</option>
+                    <option value="BALAGHAT">BALAGHAT</option>
+                    <option value="BANKHEDI">BANKHEDI</option>
+                    <option value="BARELI">BARELI</option>
+                    <option value="BARWANI">BARWANI</option>
+                    <option value="BEOHARI">BEOHARI</option>
+                    <option value="BERASIA">BERASIA</option>
+                    <option value="BETUL">BETUL</option>
+                    <option value="BHIND">BHIND</option>
+                    <option value="BIAORA">BIAORA</option>
+                    <option value="BINA">BINA</option>
+                    <option value="BURHANPUR">BURHANPUR</option>
+                    <option value="CHAKGHAT">CHAKGHAT</option>
+                    <option value="CHAURAI">CHAURAI</option>
+                    <option value="CHHAPARA">CHHAPARA</option>
+                    <option value="CHHATARPUR">CHHATARPUR</option>
+                    <option value="CHHINDWARA">CHHINDWARA</option>
+                    <option value="DABRA">DABRA</option>
+                    <option value="DALAUDA">DALAUDA</option>
+                    <option value="DAMOH">DAMOH</option>
+                    <option value="DATIA">DATIA</option>
+                    <option value="DEORI">DEORI</option>
+                    <option value="DEWAS">DEWAS</option>
+                    <option value="DHAR">DHAR</option>
+                    <option value="GADARWARA">GADARWARA</option>
+                    <option value="GANJ BASODA">GANJ BASODA</option>
+                    <option value="GARHAKOTA">GARHAKOTA</option>
+                    <option value="GAUTAMPURA">GAUTAMPURA</option>
+                    <option value="GOTEGAON">GOTEGAON</option>
+                    <option value="GUNA">GUNA</option>
+                    <option value="HANUMANA">HANUMANA</option>
+                    <option value="HARDA">HARDA</option>
+                    <option value="HARPALPUR">HARPALPUR</option>
+                    <option value="HARSUD">HARSUD</option>
+                    <option value="INDORE">INDORE</option>
+                    <option value="ITARSI">ITARSI</option>
+                    <option value="JABALPUR">JABALPUR</option>
+                    <option value="JABERA">JABERA</option>
+                    <option value="JAORA">JAORA</option>
+                    <option value="JHABUA">JHABUA</option>
+                    <option value="JOBAT">JOBAT</option>
+                    <option value="KARERA">KARERA</option>
+                    <option value="KAROND">KAROND</option>
+                    <option value="KASRAWAD">KASRAWAD</option>
+                    <option value="KATANGI">KATANGI</option>
+                    <option value="KATNI">KATNI</option>
+                    <option value="KHANDWA">KHANDWA</option>
+                    <option value="KHARGONE">KHARGONE</option>
+                    <option value="KHATEGAON">KHATEGAON</option>
+                    <option value="KHETIYA">KHETIYA</option>
+                    <option value="KHIRKIYA">KHIRKIYA</option>
+                    <option value="KUMS-PATAN">KRISHI UPAJ MANDI SAMITI-PATAN</option>
+                    <option value="KUMS-ANJAD">KRISHI UPAJ MANDI SAMITI-ANJAD</option>
+                    <option value="KUMS-BADWAHA">KRISHI UPAJ MANDI SAMITI-BADWAHA</option>
+                    <option value="KUMS-BANAPURA">KRISHI UPAJ MANDI SAMITI-BANAPURA</option>
+                    <option value="KUMS-BHIKANGAON">KRISHI UPAJ MANDI SAMITI-BHIKANGAON</option>
+                    <option value="KUMS-DHAMNOD">KRISHI UPAJ MANDI SAMITI-DHAMNOD</option>
+                    <option value="KUMS-GANDHWANI">KRISHI UPAJ MANDI SAMITI-GANDHWANI</option>
+                    <option value="KUMS-KARELI">KRISHI UPAJ MANDI SAMITI-KARELI</option>
+                    <option value="KUMS-KARHI">KRISHI UPAJ MANDI SAMITI-KARHI</option>
+                    <option value="KUMS-KHURAI">KRISHI UPAJ MANDI SAMITI-KHURAI</option>
+                    <option value="KUMS-KOLARAS">KRISHI UPAJ MANDI SAMITI-KOLARAS</option>
+                    <option value="KUMS-KUKSHI">KRISHI UPAJ MANDI SAMITI-KUKSHI</option>
+                    <option value="KUMS-KUMBHRAJ">KRISHI UPAJ MANDI SAMITI-KUMBHRAJ</option>
+                    <option value="KUMS-LASHKAR">KRISHI UPAJ MANDI SAMITI-LASHKAR</option>
+                    <option value="KUMS-NAGOD">KRISHI UPAJ MANDI SAMITI-NAGOD</option>
+                    <option value="KUMS-NASRULLAGANJ">KRISHI UPAJ MANDI SAMITI-NASRULLAGANJ</option>
+                    <option value="KUMS-PANDHURNA">KRISHI UPAJ MANDI SAMITI-PANDHURNA</option>
+                    <option value="KUMS-RAISEN">KRISHI UPAJ MANDI SAMITI-RAISEN</option>
+                    <option value="KUMS-SANAWAD">KRISHI UPAJ MANDI SAMITI-SANAWAD</option>
+                    <option value="KUMS-SAUNSAR">KRISHI UPAJ MANDI SAMITI-SAUNSAR</option>
+                    <option value="KUMS-SHIVPURI">KRISHI UPAJ MANDI SAMITI-SHIVPURI</option>
+                    <option value="KUMS-SINGRAULI">KRISHI UPAJ MANDI SAMITI-SINGRAULI</option>
+                    <option value="KUMS-UDAIPURA">KRISHI UPAJ MANDI SAMITI-UDAIPURA</option>
+                    <option value="KURAWAR">KURAWAR</option>
+                    <option value="LAVKUSHNAGAR">LAVKUSHNAGAR</option>
+                    <option value="MAHIDPUR">MAHIDPUR</option>
+                    <option value="MAIHAR">MAIHAR</option>
+                    <option value="MANDLA">MANDLA</option>
+                    <option value="MANDSAUR">MANDSAUR</option>
+                    <option value="MHOW">MHOW</option>
+                    <option value="MORENA">MORENA</option>
+                    <option value="MUNGAOLI">MUNGAOLI</option>
+                    <option value="NARSINGHGARH">NARSINGHGARH</option>
+                    <option value="NEEMUCH">NEEMUCH</option>
+                    <option value="NIWARI">NIWARI</option>
+                    <option value="OBAIDULLAGANJ">OBAIDULLAGANJ</option>
+                    <option value="PACHORE">PACHORE</option>
+                    <option value="PALARI">PALARI</option>
+                    <option value="PANNA">PANNA</option>
+                    <option value="PATHARIA">PATHARIA</option>
+                    <option value="PETLAWAD">PETLAWAD</option>
+                    <option value="PIPALIYA">PIPALIYA</option>
+                    <option value="PIPARIYA">PIPARIYA</option>
+                    <option value="RAHATGARH">RAHATGARH</option>
+                    <option value="RAJGARH">RAJGARH</option>
+                    <option value="RAJNAGAR">RAJNAGAR</option>
+                    <option value="RATLAM">RATLAM</option>
+                    <option value="REHLI">REHLI</option>
+                    <option value="REWA">REWA</option>
+                    <option value="SAGAR">SAGAR</option>
+                    <option value="SANWER">SANWER</option>
+                    <option value="SATNA">SATNA</option>
+                    <option value="SEGAON">SEGAON</option>
+                    <option value="SEHORA">SEHORA</option>
+                    <option value="SEHORE">SEHORE</option>
+                    <option value="SEMRI HARCHAND">SEMRI HARCHAND</option>
+                    <option value="SENDHWA">SENDHWA</option>
+                    <option value="SEONI">SEONI</option>
+                    <option value="SHAHDOL">SHAHDOL</option>
+                    <option value="SHAHPURA BHITONI">SHAHPURA BHITONI</option>
+                    <option value="SHAJAPUR">SHAJAPUR</option>
+                    <option value="SHEOPURKALAN">SHEOPURKALAN</option>
+                    <option value="SHUJALPUR">SHUJALPUR</option>
+                    <option value="SIDHI">SIDHI</option>
+                    <option value="SILWANI">SILWANI</option>
+                    <option value="SIRALI">SIRALI</option>
+                    <option value="SIRONJ">SIRONJ</option>
+                    <option value="SONKATCH">SONKATCH</option>
+                    <option value="THANDLA">THANDLA</option>
+                    <option value="TIKAMGARH">TIKAMGARH</option>
+                    <option value="TIMARNI">TIMARNI</option>
+                    <option value="UJJAIN">UJJAIN</option>
+                    <option value="UMARIA">UMARIA</option>
+                    <option value="VIDISHA">VIDISHA</option>
+                  </select>
+                </div>
+                <div class="col-md-12 mt-2 emandi-select e-trade-inputs">
+                  <label for="addData_commodity" style="float: left;"><span><i class="bi bi-minecart-loaded"></i></i>
+                      Commodity</span></label>
+                  <select class="form-select" style="font-size: x-large;" id="addData_commodity">
+                    <option value="0">-- Select Commodity --</option>
+                    <option value="WHEAT">WHEAT</option>
+                    <option value="WHEAT-HYBRID">WHEAT-HYBRID</option>
+                    <option value="WHEAT-SARABHATI">WHEAT-SARABHATI</option>
+                    <option value="WHITE SUNHARA">WHITE SUNHARA</option>
+                    <option value="PADDY">PADDY</option>
+                    <option value="PADDY-COMMON GRADE">PADDY-COMMON GRADE</option>
+                    <option value="ARHAR WHOLE / TUR (RED GRAM)">ARHAR WHOLE / TUR (RED GRAM)</option>
+                    <option value="TUR/ARHAR">TUR/ARHAR</option>
+                    <option value="BARLEY (JAU)">BARLEY (JAU)</option>
+                    <option value="BATRI">BATRI</option>
+                    <option value="CHANA (BENGAL GRAM)">CHANA (BENGAL GRAM)</option>
+                    <option value="CHANA (BENGAL GRAM)-DESI">CHANA (BENGAL GRAM)-DESI</option>
+                    <option value="CHANA (BENGAL GRAM)-DOLLAR">CHANA BENGAL GRAM-DOLLAR</option>
+                    <option value="DRY PEAS">DRY PEAS</option>
+                    <option value="GREEN GRAM">GREEN GRAM</option>
+                    <option value="GUAR SEEDS">GUAR SEEDS</option>
+                    <option value="MAIZE">MAIZE</option>
+                    <option value="MAIZE YELLOW">MAIZE YELLOW</option>
+                    <option value="MAIZE-NEW">MAIZE-NEW</option>
+                    <option value="MASOOR">MASOOR</option>
+                    <option value="MOONG WHOLE (GREEN GRAM)">MOONG WHOLE (GREEN GRAM)</option>
+                    <option value="MUSTARD">MUSTARD</option>
+                    <option value="PEAS GREEN ">PEAS GREEN </option>
+                    <option value="PEAS SHELLING">PEAS SHELLING</option>
+                    <option value="RAJMA">RAJMA</option>
+                    <option value="SOYA-YELLOW">SOYA-YELLOW</option>
+                    <option value="SOYABEAN">SOYABEAN</option>
+                    <option value="TARAMIRA">TARAMIRA</option>
+                    <option value="TEVADA ">TEVADA </option>
+                    <option value="URAD (BLACK GRAM)">URAD (BLACK GRAM)</option>
+                    <option value="WHITE PEAS">WHITE PEAS</option>
+                  </select>
+                </div>
+                <div class="col-md-12 mt-2 emandi-select e-trade-inputs1">
+                  <label for="min_max_apmc_date" style="float: left;"><span><i class="bi bi-calendar-week"></i> Select
+                      Date</span></label>
+                  <input class="form-control" type="date" id="addData_date">
+                </div>
+                <div class="input-group my-3">
+                  <span class="input-group-text" style="font-size: x-large;">₹</span>
+                  <input type="text" class="form-control" id="addData_minimum_price"
+                    aria-label="Min. Amount of Commodity in Rupee" placeholder="Enter Minimum Price"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="7" minlength="1">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="font-size: x-large;">₹</span>
+                  <input type="text" class="form-control" id="addData_maximum_price"
+                    aria-label="Max. of Commodity in Rupee" placeholder="Enter Maximum Price"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="7" minlength="1">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="font-size: x-large;">₹</span>
+                  <input type="text" class="form-control" id="addData_modal_price"
+                    aria-label="Modal of Commodity in Rupee" placeholder="Enter Modal Price"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="7" minlength="1">
+                </div>
+                <div class="col-md-12 mt-2 emandi-select e-trade-inputs1">
+                  <label for="commodity-arrival" style="float: left;"><span><i class="bi bi-building-up"></i> Commodity
+                      Arrival</span></label>
+                  <input type="text" class="form-control" id="addData_commodity_arrival"
+                    aria-label="Enter Commodity Arrival" placeholder="Enter Commodity Arrivals"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="7" minlength="1">
+                </div>
+                <div class="col-md-12 mt-2 emandi-select e-trade-inputs1">
+                  <label for="commodity-traded" style="float: left;"><span><i class="bi bi-building-check"></i>
+                      Commodity Traded</span></label>
+                  <input type="text" class="form-control" id="addData_commodity_traded"
+                    aria-label="Enter Commodity Traded" placeholder="Enter Commodity Traded"
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="7" minlength="1">
+                </div>
+                <div class="col-md-12 mt-2 emandi-select e-trade-inputs">
+                  <label for="unit" style="float: left;"><span><i class="bi bi-funnel"></i> Unit</span></label>
+                  <select class="form-select" style="font-size: x-large;" id="addData_unit">
+                    <option value="0">-- Select Unit --</option>
+                    <option value="Kg">Kilogram</option>
+                    <option value="Qui">Quintal</option>
+                    <option value="Ton">Ton</option>
+                  </select>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-between my-2">
+                  <button class="btn btn-success me-md-2"
+                    style="--bs-btn-padding-x: 0.3rem; --bs-btn-padding-y: 0.05rem;" type="button"
+                    onclick="addData(); hideAddForm()"><i class="bi bi-patch-plus"></i> Add Data</button>
+                  <button class="btn btn-secondary" style="--bs-btn-padding-x: 0.3rem; --bs-btn-padding-y: 0.05rem;"
+                    type="button" onclick="cancel()"><i class="bi bi-x-circle"></i> Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Success message on Adding data -->
+      <!-- <div class="modal modal-sheet d-block p-4 py-md-5" tabindex="-1" role="dialog" id="success-message" style="display: none;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div style="height: auto; font-size: xxx-large;">
+              <span style="color: #06ab53;"><i class="bi bi-patch-check-fill"></i></span>
+            </div>
+            <div class="modal-body py-0">
+              <h3>'Congratulations! Data is added successfully to the Server.'</h3>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Error message on not Adding data -->
+      <!-- <div class="modal modal-sheet d-block p-4 py-md-5" tabindex="-1" role="dialog" id="error-message" style="display: none;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div style="height: auto; font-size: xxx-large;">
+              <span style="color: #b40707;"><i class="bi bi-x-circle-fill"></i></span>
+            </div>
+            <div class="modal-body py-0">
+              <h3>'Sorry! An Error adding data to the server.'</h3>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <table class="table" style="--bs-table-bg: none; padding: none;" id="dtaTable">
+        <thead>
+          <tr style="background-color: #2aa7dfbf;">
+            <th>APMC</th>
+            <th>Date</th>
+            <th>Commodity</th>
+            <th>Minimum Price (₹)</th>
+            <th>Modal Price (₹)</th>
+            <th>Maximum Price (₹)</th>
+            <th>Commodity Arrivals</th>
+            <th>Commodity Traded</th>
+            <th>Unit</th>
+          </tr>
+        </thead>
+        <tbody id="tableData" style="letter-spacing: 0.3px;">
+          <!-- Trade details are displayed here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer class="py-3 my-4" style="background-color: #d0d0d0;">
+    <a href="./home.html" class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="../assets/logo/logo-Green.png" alt="Annadaata Swarajya" width="100" height="100">
+    </a>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="./home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="./About Us.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+      <li class="nav-item"><a href="./Terms Of Service & Privacy Policy.html" class="nav-link px-2 text-body-secondary">Website Policies</a></li>
+      <li class="nav-item"><a href="./Feedback & Report Issues.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="./Feedback & Report Issues.html" class="nav-link px-2 text-body-secondary">Report Issue & Feedback</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 | Annadata Swarajya, India</p>
+  </footer>
+  <!-- JavaScript -->
+  <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="../script/script.js"></script>
+  <script src="http://127.0.0.1:5500/script/client.js"></script>
+
+</body>
+
+</html>

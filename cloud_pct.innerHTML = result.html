@@ -1,0 +1,131 @@
+cloud_pct.innerHTML = result.cloud_pct 
+temp.innerHTML = result.temp
+feels_like.innerHTML = result.feels_like
+humidity.innerHTML = result.humidity
+min_temp.innerHTML = result.min_temp
+max_temp.innerHTML = result.max_temp
+wind_speed.innerHTML = result.wind_speed
+wind_degrees.innerHTML = result.wind_degrees
+sunrise.innerHTML = result.sunrise
+sunset.innerHTML = result.sunset
+
+
+7f2da5216a5b4324a1f52e67ae094f9d
+
+
+<div class="form-group">
+                <label for="userTypeReg">Select User Type :</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="farmerReg" name="userTypeReg" value="farmer">
+                  <label class="form-check-label" for="farmerReg">Farmer</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="mandiEmployeeReg" name="userTypeReg" value="mandiEmployee">
+                  <label class="form-check-label" for="mandiEmployeeReg">Mandi Employee</label>
+                </div>
+</div>
+
+
+<div class="form-group">
+                <label for="userTypeReg">Select User Type :</label><br>
+                <input type="radio" id="farmerReg" name="userTypeReg" value="farmer">
+                <label for="farmerReg">Farmer</label>
+                </div>
+                <input type="checkbox" id="mandiEmployeeReg" name="userTypeReg" value="mandiEmployee">
+                <label for="mandiEmployeeReg">Mandi Employee</label><br><br>
+
+
+                <div class="form-group">
+                    <label for="aadhaarCard">Aadhaar Card</label>
+                    <span class="prefix"><i class="bi bi-person-vcard"></i></span>
+                    <input type="text" class="form-control" id="aadhaarCard" name="aadhaarCard"
+                      placeholder="Enter Your Aadhaar Card Number" maxlength="12" minlength="12">
+                </div>
+
+
+                <label for="aadharMandiID">Aadhar or Mandi ID Card Number:</label><br>
+                <input type="text" id="aadharMandiID" name="aadharMandiID"><br><br>
+
+
+                <label for="fullName">Full Name:</label><br>
+                            <input type="text" id="fullName" name="fullName"><br><br>
+
+
+
+                <label for="aadharCard">Email:</label><br>
+                <input type="aadharCard" id="aadharCard" name="aadharCard"><br><br>           
+
+
+                <label for="phoneNumber">Phone Number:</label><br>
+                <input type="tel" id="phoneNumber" name="phoneNumber"><br><br>
+
+                <div class="input-box form-control">
+                    <span class="prefix">+91</span>
+                    <input type="text" name="mobile_no" class="mobileNoInput" id="mobile_no" required placeholder="Enter your Mobile no for OTP verification" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10" minlength="10">
+                </div>
+
+                <div class="mb-4 form-group">
+                    <label for="opt" class="form-label">OTP <span class="text-danger">*</span></label>
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7 col-7">
+                            <input type="text" name="otp" class="form-control" id="otp" placeholder="Enter OTP" onkeypress="return (event.charCode >= 48 &amp;&amp; event.charCode <= 57)" maxlength="6" minlength="6" readonly="">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <input type="button" class="btn btn-primary bjy-btn" id="send-otp" value="Send OTP" aria-invalid="false">
+                            <a type="button" id="timer" style="display:none;"> Resend OTP in <span id="countdowntimer">60 </span> Seconds</a>
+                        </div>
+                        <div id="error_otp"></div>
+                    </div>
+                </div>
+            
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                        placeholder="Confirm Password">
+                </div>
+                
+                <label for="confirmPassword">Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+                <button type="button" class="btn btn-success mt-2" onclick="login()">Login</button>
+
+                <button type="button" class="btn btn-success mt-2" onclick="register()">Submit</button>
+
+
+                <h6 class="warning-text"><span class="text-danger">*</span> Marked fields are Compulsory</h6>
+
+                <span class="text-danger">*</span>
+
+
+<!-- navbar creation code -->
+
+                  <nav class="navbar bg-body-tertiary">
+                    <div class="container"> <a class="navbar-brand" href="./home.html"><img src="../assets/logo/logo.png" alt="Annadaata Swarajya" width="100" height="100"></a>
+                    </div>
+                    <div class="nav-item">
+                      <div class="nav-item-language" id="languageDiv">
+                        <a href="./home.html" class="nav-language-eng">English </a> | <a href="./homehindi.html"
+                          class="nav-language-hindi"> हिंदी</a>
+                      </div>
+                      <div class="nav-item-login">
+                        <a href="./user registration & info.html"><i class="bi bi-person-fill"></i></a>
+                      </div>
+                      <div class="hamburger-menu" id="hamburger-menu" onclick="onClickMenu()"> <i class="bi bi-list"></i>
+                      </div>
+                    </div>
+                    <div class="menu">
+                      <ul class="menu-items" id="menu-items">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./AgriculturalCommoditiesPrices.html">Agricultural Commodities Prices</a></li>
+                        <li><a href="./Food Security Act & Government Schemes.html">Food Security Act & Government Schemes</a></li>
+                        <li><a href="./Weather Forecast & Agricultural News.html">Weather Forecast & Agricultural News</a></li>
+                        <li><a href="./Feedback & Report Issues.html">Feedback & Report Issues</a></li>
+                        <li><a href="./Terms Of Service & Privacy Policy.html">Terms Of Service & Privacy Policy</a></li>
+                        <li><a href="./About Us.html">About Us</a></li>
+                      </ul>
+                    </div>
+                  </nav>
